@@ -1,11 +1,12 @@
 # Vamos solicitar dois números de entrada e depois vamos realizar uma operação simples entre eles.
-
+from colorama import init, Fore, Style
 
 num1 = int(input("Digite o primeiro número: "))
 num2 = int(input("Digite o segundo número: "))
 
-operacao = input("Escolha qual tipo de operação deseja fazer?' +, -, *, /:  ")
+operacao = input(f"Escolha qual tipo de operação deseja fazer? ({Fore.CYAN}{("+ - * /")}{Style.RESET_ALL}): ")
 
+#operacao = input("Escolha qual tipo de operação deseja fazer?' +, -, *, /:  ")
 
 
 if operacao == '+':
